@@ -10,9 +10,7 @@ class ReviewsCarousel extends Component {
     const {length} = reviewsList
     const {index} = this.state
 
-    if (length - 1 === index) {
-      this.setState(prevState => ({index: prevState.index}))
-    } else {
+    if (index < length - 1) {
       this.setState(prevState => ({index: prevState.index + 1}))
     }
   }
@@ -20,11 +18,8 @@ class ReviewsCarousel extends Component {
   leftArrowClicked = () => {
     // const {reviewsList} = this.props
     const {index} = this.state
-    const firstIndex = 0
 
-    if (firstIndex === index) {
-      this.setState(prevState => ({index: prevState.index}))
-    } else {
+    if (index > 0) {
       this.setState(prevState => ({index: prevState.index - 1}))
     }
   }
