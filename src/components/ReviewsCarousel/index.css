@@ -1,0 +1,104 @@
+/* Write your code here */
+.app-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/reviews-bg.png');
+  background-size: cover;
+  height: 100vh;
+}
+.heading {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+}
+
+.arrow-image-container {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  margin: auto;
+  width: 85%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .arrow-image-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrow-image {
+  height: 40px;
+}
+
+.reviewer-image {
+  height: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviewer-image {
+    height: 100px;
+  }
+}
+
+.reviewer-name {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .reviewer-name {
+    font-size: 22px;
+  }
+}
+
+.reviewer-company {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .reviewer-company {
+    font-size: 18px;
+  }
+}
+
+.review-des {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .review-des {
+    font-size: 18px;
+  }
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
